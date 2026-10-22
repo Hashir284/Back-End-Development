@@ -1,0 +1,6 @@
+CREATE INDEX idx_email
+ON users(email);
+Index database mein data ko jaldi search karne mein help karta hai.
+
+Index ke baghair: PostgreSQL ko bohat saari rows check karni par sakti hain.
+Index ke saath: PostgreSQL email ke index ki help se user ko jaldi dhoondh sakta hai.

@@ -1,0 +1,18 @@
+PostgreSQL mein JOIN ka use 2 ya zyada tables ka related data 
+ek saath nikalne ke liye hota hai
+
+JOIN	Kya return karta hai?
+INNER JOIN	Sirf matching records
+LEFT JOIN	Left table ke saare records
+RIGHT JOIN	Right table ke saare records
+FULL OUTER JOIN	Dono tables ke saare records
+
+SELECT users.name, orders.total
+FROM users
+INNER JOIN orders
+ON users.id = orders.user_id;
+
+SELECT users.name, orders.total
+FROM users
+LEFT JOIN orders
+ON users.id = orders.user_id;

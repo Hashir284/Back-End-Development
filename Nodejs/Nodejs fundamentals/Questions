@@ -1,0 +1,5 @@
+Node.js kya hai aur browser JavaScript se kaise different hai?
+Node.js server-side environment hai jo V8 engine par chalta hai aur backend development ke liye use hota hai, jabke browser JavaScript sirf DOM manipulation aur client-side rendering tak limited hoti hai.
+
+Node.js runtime, V8 engine
+Node.js ek runtime environment hai jo JavaScript ko browser ke bahar chalane ki ijazat deta hai, aur Google Chrome ka V8 engine is code ko fast machine code mein compile karta hai.

@@ -1,0 +1,3 @@
+PostgreSQL mein Relationships ka matlab hai 2 ya zyada tables ko aapas mein connect karna
+
+FOREIGN KEY tables ke records ke darmiyan relationship banati hai aur referential integrity maintain karti hai.

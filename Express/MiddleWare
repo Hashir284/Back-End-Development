@@ -1,0 +1,36 @@
+interview 
+Middleware request ko validate aur authorize karta hai. Agar conditions satisfy hon toh next() ke through control aage pass karta hai, warna  response mein error return karta hai
+Middleware:
+Middleware ek function hota hai jo request aur response ke beech execute hota hai.
+Ye request ko check ya modify kar sakta hai, next middleware ko control de sakta
+hai, ya response bhej sakta hai
+
+const express = require("express");
+const app = express();
+
+const logger = (req, res, next) => {
+  console.log(req.method, req.url);
+  next();
+};
+
+app.use(logger);
+
+app.get("/", (req, res) => {
+  res.send("Home Page");
+});
+
+app.listen(3000);
+
+req — client ki request.
+res — client ko response bhejne ke liye.
+next() — control agle middleware ya route handler ko deta hai.
+app.use(logger) — middleware register karta hai.
+
+Middleware kahan use hota hai?
+- Logging: Request ki information record karna.
+- Authentication: Check karna user logged in hai ya nahi.
+- Error handling: Errors handle karna.
+- Parsing: JSON request body read karna, jaise express.json().
+
+“Logging ka matlab application ki requests aur activities ko record karna hai, taake debugging aur monitoring mein help mile. Express mein hum middleware ke through request method aur URL log kar sakte hain.”x
+express.json() — frontend se aane wali JSON request body ko parse karta hai, taake tum req.body access kar sako.

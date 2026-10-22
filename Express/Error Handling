@@ -1,0 +1,46 @@
+backend mein Error Handling ka matlab hai agar API mein koi error aaye, toh server
+crash hone ke bajaye proper error response bheje.
+1. Normal error handling
+app.get("/users", async (req, res) => {
+  try {
+    const users = await getUsers();
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({
+      message: "Server error",
+    });
+  }
+});
+
+2. Global Error Middleware
+const errorMiddleware = (err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  res.status(statusCode).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+  });
+};
+module.exports = errorMiddleware;
+
+3. next(error) kya karta hai?
+const express = require("express");
+const app = express();
+app.get("/users", (req, res, next) => {
+  const error = new Error("Users not found");
+  error.statusCode = 404;
+  next(error);
+});
+// Error-handling middleware
+app.use((err, req, res, next) => {
+  res.status(err.statusCode || 500).json({
+    message: err.message,
+  });
+});
+
+4. Common HTTP error codes
+Code	Meaning
+400	Bad Request — invalid input
+401	Unauthorized — login/authentication required
+403	Forbidden — permission nahi
+404	Resource nahi mila
+500	Internal Server Error

@@ -1,0 +1,12 @@
+global: Browser ke window object ki tarah Node.js ka global object hai, jise code mein kahin bhi access kiya ja sakta hai.
+process: Current running process ki details aur control deta hai (jaise environment variables ke liye process.env).
+
+__dirname: Current folder (directory) ka absolute path deta hai jahan file mojood hai.
+__filename: Current file ka absolute path file name ke sath deta hai
+
+
+npm: Node.js ka default package manager hai jisse libraries aur packages install aur manage kiye jaate hain.
+package.json: Project ka blueprint file hai jo project ki metadata, dependencies aur custom scripts ki list rakhti hai.
+package-lock.json: Installed packages ke exact versions ko lock karta hai taake sabke paas same version rahe.
+npx: Ek package runner tool hai jo kisi bhi package ko bina permanent install kiye direct run karne ki ijazat deta hai.
+Package install karne ke liye npm install <package-name> aur remove karne ke liye npm uninstall <package-name> use kiya jata hai.

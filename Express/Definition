@@ -1,0 +1,27 @@
+Routing:
+“Routing ka matlab hai user ki HTTP request ke URL aur method ke according decide karna ke 
+kaunsa code execute hoga aur kya response milega.”
+
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Home Page");
+});
+
+app.get("/about", (req, res) => {
+  res.send("About Page");
+});
+
+app.post("/users", (req, res) => {
+  res.send("User Created");
+});
+
+app.listen(3000);
+
+Samjho
+- app.get("/") — Home page ki GET request handle karega.
+- app.get("/about") — About page ki GET request handle karega.
+- app.post("/users") — User create karne ki POST request handle karega.
+- req — Request ki information rakhta hai.
+- res — Client ko response bhejne ke liye use hota hai.

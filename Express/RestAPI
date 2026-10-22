@@ -1,0 +1,10 @@
+1. Client-Server: Frontend aur backend alag hote hain. Frontend request 
+bhejta hai, backend response deta hai.
+
+2. Stateless: Har request mein server ko request process karne ke liye zaroori information milni chahiye. Server previous request ki client-session state par depend nahi karta.
+
+3. Cacheable: Jo data baar-baar chahiye, usko cache mein save kar sakte hain taake har baar server se mangna na pade.
+
+4. Uniform Interface: API mein same resource URL ko different HTTP methods ke saath use karte hain, jaise GET /users se users lena aur POST /users se naya user banana.
+
+5. Layered System: Request beech mein middleware, proxy ya gateway se guzar sakti hai; client ko andar ka poora system pata hona zaroori nahi.

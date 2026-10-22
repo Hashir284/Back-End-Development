@@ -1,0 +1,67 @@
+1. SELECT — data lena
+SELECT * FROM users;
+Saare users milenge.
+
+Specific user:
+SELECT * FROM users
+WHERE id = 1;
+
+2. INSERT — naya data add karna
+INSERT INTO users (name, email)
+VALUES ('Ali', 'ali@gmail.com');
+Naya user add hoga.
+
+3. UPDATE — data change karna
+UPDATE users
+SET name = 'Ahmed'
+WHERE id = 1;
+ID 1 wale user ka naam change hoga.
+
+4. DELETE — data remove karna
+DELETE FROM users
+WHERE id = 1;
+ID 1 wala user delete hoga.
+Important: UPDATE aur DELETE mein WHERE lagana yaad rakho. Warna table ke saare records affect ho sakte hain.
+
+5. ORDER BY — data sort karna
+SELECT * FROM users
+ORDER BY name ASC;
+Names alphabetical order mein aayenge.
+- ASC → ascending order
+- DESC → descending order
+
+6. LIMIT — results ki quantity control karna
+SELECT * FROM users
+LIMIT 10;
+Maximum 10 rows milengi.
+
+7. COUNT — records count karna
+SELECT COUNT(*) FROM users;
+Total users ki quantity milegi.
+
+8. GROUP BY — groups banana
+Maan lo orders table mein user_id aur total hain:
+SELECT user_id, SUM(total)
+FROM orders
+GROUP BY user_id;
+Har user ke orders ka total amount milega.
+
+9. WHERE — condition lagana
+SELECT * FROM users
+WHERE city = 'Karachi';
+Sirf Karachi ke users milenge.
+
+10. JOIN — tables ka data combine karna
+SELECT users.name, orders.total
+FROM users
+JOIN orders
+ON users.id = orders.user_id;
+Users ke naam ke saath unke orders ka amount milega.
+
+Backend developer ke liye learning order:
+1. SELECT, WHERE
+2. INSERT, UPDATE, DELETE
+3. ORDER BY, LIMIT
+4. COUNT, SUM, GROUP BY
+5. INNER JOIN, LEFT JOIN
+6. PRIMARY KEY, FOREIGN KEY, indexes
