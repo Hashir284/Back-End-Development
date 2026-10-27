@@ -1,0 +1,23 @@
+1. Password security — sabse important
+Abhi signup mein password plain text mein save ho raha hai aur login mein direct comparison ho raha hai.
+
+Password ko bcrypt ya argon2 se hash karo. Plain-text passwords database mein store nahi karne chahiye.
+
+3. Cookie settings
+Tum secure: true use kar rahe ho. Local development mein plain HTTP par cookie set nahi hogi. Development aur production ke liye cookie settings alag rakho. httpOnly: true achha security measure hai.
+
+4. Error handling
+Tum routes mein try/catch use kar rahe ho, jo useful hai. Agla step centralized error middleware banana hai taake error responses ek jagah manage ho sakein.
+
+Professional readiness check karne ke liye ab ye verify karo ke tum:
+- Apna code bina tutorial copy kiye samjha aur modify kar sakte ho.
+- Authentication aur authorization ka difference explain kar sakte ho.
+- Validation, password hashing aur error handling sahi implement kar sakte ho.
+- Project ko deploy karke real requests test kar sakte ho
+
+Ab PERN developer banne ke liye kya karna hai?
+1. Node.js fundamentals — modules, async/await, events, environment variables.
+2. PostgreSQL practice — CRUD, relationships, joins, constraints aur queries.
+3. React + Express + PostgreSQL connect karo — frontend se API call karke database ka data dikhao.
+4. Authentication — signup, login, password hashing, JWT/cookies aur authorization.
+5. Ek complete project banao — jaise e-commerce app, admin dashboard ya task manager.

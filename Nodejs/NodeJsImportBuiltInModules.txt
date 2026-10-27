@@ -1,12 +1,9 @@
 fs --> done
 path --> done
-http
-events
-stream
-crypto
-os
-url
-child_process
+http --done
+events --> done
+stream --> done
+os --> done
 
 Pro Tip for Interviews: Express.js ya NestJS use karte waqt bhi interviewers fs, 
 path, events, aur http ke internal concepts par zarur sawal karte hain!
