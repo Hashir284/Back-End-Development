@@ -4,6 +4,10 @@ const path = require('path');
 
 const app = express();
 const PORT = 3000;
+// createReadStream() — File read karna
+// Ye file ka data chunks (chhote parts) mein read karta hai, poori file ek saath memory mein load nahi karta.
+// createWriteStream() — File mein data likhna
+// Ye file mein data chunks mein write karne ke liye use hota hai.
 
 // GET Route
 app.get('/', (req, res) => {

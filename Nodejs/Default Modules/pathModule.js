@@ -2,7 +2,7 @@ const path = require('path')
 console.log(__dirname);
 console.log(__filename);
 
-const filePath = 'D:\Development Work\Back-End-Development\Nodejs\Default Modules\pathModule.js'
+const filePath = 'D:\\Development Work\\Back-End-Development\\Nodejs\\Default Modules\\pathModule.js'
 
 console.log('basename:', path.basename(filePath))
 console.log('basename:', path.basename(filePath, '.js'))
@@ -13,7 +13,7 @@ console.log('basename:', path.basename(filePath, '.js'))
 
 // console.log(path.join('/1','/2','app.js'));
 
-// console.log(path.resolve('Backup','pathModule.js'));
+console.log('Resolve', path.resolve('Backup','pathModule.js'));
 
 // console.log(path.parse(path.join('Backup','pathModule.js')));
 

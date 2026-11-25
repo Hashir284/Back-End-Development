@@ -11,6 +11,7 @@ fs.readFile('info.txt', 'utf8', (err, data)=>{
 
 // Synch
 const data2 = fs.readFileSync('info.txt','utf8')
+fs.writeFileSync('harry.txt','heloo')
 console.log('File Content:', data2);
 
 // Write File
@@ -57,3 +58,5 @@ fs.rename('text.txt', 'Text.txt', (err)=>{
 
 // Best Practice: Real-world Node.js backend servers aur APIs mein hamesha Async
 // methods hi use hote hain taake server hang ya block na ho.
+
+// sync method mein callback nhi dete hein 

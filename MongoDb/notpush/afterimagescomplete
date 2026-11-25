@@ -1,0 +1,33 @@
+Networking Fundamentals
+- DNS
+- HTTP/HTTPS
+- Ports
+- SSH
+- TCP/IP basics
+2. Docker Advanced Basics
+- Docker Compose
+- Docker Volumes
+- Docker Networks
+- Dockerfile optimization
+3. Cloud Computing
+- AWS fundamentals
+- EC2
+- S3
+- IAM
+- Cloud databases basics
+4. Production & Server Management
+- Nginx
+- Domain configuration
+- SSL certificates
+- Reverse Proxy
+5. Monitoring & Logging
+- Application logs
+- Server monitoring
+- Error tracking
+- Basic uptime monitoring
+6. DevOps Security
+- Environment variables
+- Secrets management
+- SSH key authentication
+- Firewall basics
+- Dependency security

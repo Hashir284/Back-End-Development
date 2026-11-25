@@ -1,0 +1,21 @@
+1. Hosting kya hai?
+Hosting ka matlab hai apni application ko kisi server ya cloud infrastructure par jagah dena, jahan woh run kar sake aur internet se access ho.
+
+Example:
+- Render tumhare Node.js backend ko server par host karta hai.
+- Vercel tumhare React frontend ko host karta hai.
+2. Deployment kya hai?
+Deployment ka matlab hai apni application ka code hosting environment par upload/configure karke usko run karne ke liye release karna.
+
+Example:
+1. VS Code mein application banayi.
+2. GitHub par code push kiya.
+3. Vercel par project connect kiya.
+4. Vercel ne build karke application deploy kar di.
+5. Application live ho gayi.
+
+Real-life example
+Hosting = Ghar
+Jahan tum rehte ho
+Deployment = Ghar mein shift hona
+Apna samaan wahan le jaakar setup karna.
